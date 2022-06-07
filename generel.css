@@ -2,3 +2,12 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+img {
+  width: 100%;
+}
+
+/* TYPOGRAFI */
+p {
+  max-width: 65ch;
+}
