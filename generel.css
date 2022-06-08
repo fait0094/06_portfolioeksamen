@@ -3,11 +3,50 @@
   box-sizing: border-box;
 }
 
+/* body {
+  overflow: hidden;
+} */
+
 img {
   width: 100%;
 }
 
 /* TYPOGRAFI */
+
+h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.03rem;
+}
+
+h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.3rem;
+  color: #3c4e3a;
+  margin-bottom: 0.3rem;
+  letter-spacing: 0.03rem;
+}
+
 p {
+  font-family: "EB Garamond", serif;
+  font-size: 1.1rem;
+  color: #3c4e3a;
   max-width: 65ch;
+  line-height: 1.3;
+}
+
+.p_pf {
+  margin-bottom: 20px;
+}
+
+.button {
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  letter-spacing: 0.03rem;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.1rem;
+  color: rgb(255, 255, 255);
 }

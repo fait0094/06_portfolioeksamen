@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forside</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Oswald:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="generel.css" />
     <link rel="stylesheet" href="layout.css" />
     <meta name="robots" content="noindex" />
@@ -12,20 +18,31 @@
   <body>
     <header class="menu">
       <div class="logo">
-        <a href="index.html">LOGO</a>
+        <a href="index.html">FM</a>
       </div>
-      <nav>
+
+      <nav class="main-menu">
+        <button class="toggle-btn">MENU</button>
         <ul>
           <li><a href="index.html">FORSIDE</a></li>
 
-          <li><a href="portfolio.html">PORTFOLIO</a></li>
+          <li><a href="projekter.html">PROJEKTER</a></li>
 
           <li><a href="om.html">OM MIG</a></li>
         </ul>
       </nav>
     </header>
 
-    <main></main>
+    <main class="splash">
+      <div class="grid_splash">
+        <div class="col_tekst">
+          <h1 class="forside_tekst1">PORTFOLIO</h1>
+          <h2 class="forside_tekst2">Faith Velasquez Mansilungan</h2>
+          <a href="tema2.html" class="forside_button">SE PROJEKTER</a>
+        </div>
+      </div>
+    </main>
+
     <footer></footer>
     <script src="script.js"></script>
   </body>
