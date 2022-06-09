@@ -70,7 +70,8 @@
 
 .portfolio_tema3,
 .portfolio_tema5,
-.section_2 {
+.section_2,
+.section_html2 {
   background-color: #f4f4f4;
 }
 
@@ -121,7 +122,9 @@
 }
 
 .section_1,
-.section_2 {
+.section_2,
+.section_html1,
+.section_html2 {
   display: grid;
   justify-content: center;
   padding: 2rem;
@@ -195,6 +198,7 @@
     background-color: #f4f4f4;
   }
 
+  /* Er der behov for det, når default baggrunden er hvid? */
   .portfolio_tema2,
   .portfolio_tema5 {
     background-color: white;
@@ -225,5 +229,11 @@
 
   .grid_2 {
     padding-bottom: 5rem;
+  }
+
+  /* Side: Tema 2 */
+  .tema_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
