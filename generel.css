@@ -10,6 +10,7 @@
 img {
   max-width: 100%;
   height: auto;
+  /* object-fit: cover; */
 }
 
 /* TYPOGRAFI */
@@ -36,12 +37,20 @@ h3 {
 }
 
 p,
-.cv_tekst1 li,
+.cv_tekst1 p,
 .cv_tekst2 li {
   font-family: "EB Garamond", serif;
   font-size: 1.1rem;
   color: #3c4e3a;
   max-width: 65ch;
+  line-height: 1.3;
+}
+
+.cv_tekst2 p {
+  line-height: 1.5;
+}
+
+.cv_tekst2 .fritid {
   line-height: 1.3;
 }
 

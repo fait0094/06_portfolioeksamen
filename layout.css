@@ -121,6 +121,10 @@
   max-width: 1000px;
 }
 
+.container_cv {
+  max-width: 900px;
+}
+
 .section_1,
 .section_2,
 .section_html1,
@@ -189,7 +193,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    padding-block: 48px;
+    padding-block: 3.5rem;
     gap: 30px;
   }
 
@@ -228,12 +232,14 @@
   }
 
   .grid_2 {
-    padding-bottom: 5rem;
+    padding-bottom: 1rem;
   }
 
   /* Side: Tema 2 */
   .tema_grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 3rem;
   }
 }
