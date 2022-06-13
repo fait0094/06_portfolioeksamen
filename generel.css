@@ -71,8 +71,18 @@ a {
   color: rgb(255, 255, 255);
 }
 
+a:hover {
+  color: #3c4e3a;
+}
+
 figcaption {
   font-size: 0.9rem;
   font-style: italic;
   text-align: center;
+}
+
+.forside_button:hover,
+.button:hover {
+  background-color: #5b7e57;
+  color: white;
 }
