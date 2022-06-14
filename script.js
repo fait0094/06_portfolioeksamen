@@ -15,11 +15,11 @@ function toggleMenu() {
   if (menuShown) {
     console.log(menuShown); // se i konsollen
     // sæt btn.textContent til "Luk", hvis menuShown er "true"
-    btn.textContent = "X";
+    btn.textContent = "LUK";
   } else {
     console.log(menuShown); // se i konsollen
     // sæt btn.textContent til "Menu", hvis menuShown er "false"
-    btn.textContent = "Menu";
+    btn.textContent = "MENU";
   }
   // "toggleMenu()" slutter her
 }

@@ -79,6 +79,7 @@
 .portfolio_tema6 {
   padding: 35px;
 }
+
 /* Splashbillede */
 .splash {
   background-image: url(img/portfolio_splash.webp);
@@ -141,23 +142,133 @@
   padding: 2rem;
 }
 
-/* .portraet_1 {
-  text-align: center;
-  width: 50%;
-
-  /* background-size: cover; */
-/* aspect-ratio: auto; */
-
-.portraet_1 {
-  width: 80%;
-}
-
 .portraet_2 {
-  width: 50%;
+  margin-top: 1rem;
 }
 
 @media (min-width: 600px) {
   /* Forside */
+  .splash {
+    background-size: 331%;
+    background-position: 64% 0%;
+  }
+
+  .grid_splash {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .col_tekst {
+    display: grid;
+    grid-row: 2 / span 1;
+    padding-top: 0;
+  }
+
+  .forside_tekst1 {
+    font-size: 5.5rem;
+  }
+
+  .forside_tekst2 {
+    font-size: 2rem;
+  }
+
+  .forside_button {
+    display: grid;
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  /* Side: Projekter */
+  .container_portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .portfolio_tema2,
+  .portfolio_tema3,
+  .portfolio_tema4,
+  .portfolio_tema5,
+  .portfolio_tema6 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding-block: 2rem;
+    gap: 30px;
+  }
+
+  .portfolio_tema3,
+  .portfolio_tema4 {
+    background-color: #f4f4f4;
+  }
+
+  /* Er der behov for det, når default baggrunden er hvid? */
+  .portfolio_tema2,
+  .portfolio_tema5 {
+    background-color: white;
+  }
+
+  .tekst_tema2,
+  .tekst_tema3,
+  .tekst_tema4,
+  .tekst_tema5 {
+    order: -1;
+  }
+
+  /* Side: Om mig */
+  /* .grid_1, */
+  .grid_2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+  }
+
+  /* .grid_1 {
+    padding-block: 5rem;
+    align-items: center;
+  } */
+
+  .grid_1 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding-block: 5rem;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .section_2 .container {
+    padding-block: 5rem;
+  }
+
+  .grid_2 {
+    padding-bottom: 1rem;
+  }
+
+  .portraet_2 {
+    order: -1;
+  }
+
+  /* Side: Tema 2 */
+  .tema_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  /* .tema_grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    gap: 3rem;
+  } */
+
+  .section_html2 figure {
+    padding-block: 0rem;
+  }
+}
+
+@media (min-width: 940px) {
   .splash {
     width: 100%;
     height: 100vh;
@@ -191,81 +302,5 @@
     display: grid;
     grid-column: 1;
     grid-row: 3;
-  }
-
-  /* Side: Projekter */
-  .container_portfolio {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .portfolio_tema2,
-  .portfolio_tema3,
-  .portfolio_tema4,
-  .portfolio_tema5,
-  .portfolio_tema6 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    padding-block: 2.5rem;
-    gap: 30px;
-  }
-
-  .portfolio_tema3,
-  .portfolio_tema4 {
-    background-color: #f4f4f4;
-  }
-
-  /* Er der behov for det, når default baggrunden er hvid? */
-  .portfolio_tema2,
-  .portfolio_tema5 {
-    background-color: white;
-  }
-
-  .tekst_tema2,
-  .tekst_tema3,
-  .tekst_tema4,
-  .tekst_tema5 {
-    order: -1;
-  }
-
-  /* Side: Om mig */
-  .grid_1,
-  .grid_2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-  }
-
-  .grid_1 {
-    padding-block: 5rem;
-  }
-
-  .section_2 .container {
-    padding-block: 5rem;
-  }
-
-  .grid_2 {
-    padding-bottom: 1rem;
-  }
-
-  /* Side: Tema 2 */
-  .tema_grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 3rem;
-  }
-
-  /* .tema_grid2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    align-items: center;
-    gap: 3rem;
-  } */
-
-  .section_html2 figure {
-    padding-block: 0rem;
   }
 }
