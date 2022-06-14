@@ -5,7 +5,7 @@
   background: #5b7e57;
   padding: 1.5rem;
 
-  /* Tilføjet flex-wrap, så "Luk/X" forbliver på "Menu" plads */
+  /* Tilføjet flex-wrap, så "Luk" forbliver på "Menu" plads */
   flex-wrap: wrap;
 }
 
@@ -16,7 +16,7 @@
   margin-right: 5rem;
 }
 
-/* burgermenu */
+/* Burgermenu */
 .toggle-btn {
   font-family: "Oswald", sans-serif;
   background: transparent;
@@ -68,7 +68,8 @@
 .portfolio_tema3,
 .portfolio_tema5,
 .section_2,
-.section_html2 {
+.section_gray,
+.portfolio_om_mig {
   background-color: #f4f4f4;
 }
 
@@ -76,7 +77,8 @@
 .portfolio_tema3,
 .portfolio_tema4,
 .portfolio_tema5,
-.portfolio_tema6 {
+.portfolio_tema6,
+.portfolio_om_mig {
   padding: 35px;
 }
 
@@ -102,26 +104,13 @@
 }
 
 .forside_tekst2 {
-  /* font-family: "EB Garamond", serif; */
   font-size: 2rem;
   color: white;
   font-weight: 300;
 }
 
-.forside_button {
-  text-align: center;
-}
-
-/* .forside_button {
-  display: grid;
-  justify-content: center;
-  background-color: #7ca577;
-  padding: 0.5rem;
-  margin-top: 2rem;
-} */
-
-.section_html2 figure,
-.section_html1 figure {
+.section_gray figure,
+.section_white figure {
   padding-block: 1rem;
 }
 
@@ -129,14 +118,10 @@
   max-width: 1000px;
 }
 
-.container_cv {
-  max-width: 900px;
-}
-
 .section_1,
 .section_2,
-.section_html1,
-.section_html2 {
+.section_white,
+.section_gray {
   display: grid;
   justify-content: center;
   padding: 2rem;
@@ -172,12 +157,6 @@
     font-size: 2rem;
   }
 
-  .forside_button {
-    display: grid;
-    grid-column: 1;
-    grid-row: 3;
-  }
-
   /* Side: Projekter */
   .container_portfolio {
     display: grid;
@@ -188,7 +167,8 @@
   .portfolio_tema3,
   .portfolio_tema4,
   .portfolio_tema5,
-  .portfolio_tema6 {
+  .portfolio_tema6,
+  .portfolio_om_mig {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -263,7 +243,7 @@
     gap: 3rem;
   } */
 
-  .section_html2 figure {
+  .section_gray figure {
     padding-block: 0rem;
   }
 }
@@ -296,11 +276,5 @@
 
   .forside_tekst2 {
     font-size: 2rem;
-  }
-
-  .forside_button {
-    display: grid;
-    grid-column: 1;
-    grid-row: 3;
   }
 }
