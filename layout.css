@@ -43,11 +43,13 @@
 
   .main-menu ul {
     display: none; /* Fjern menu-listen som standard */
+    gap: 1rem;
+    margin-right: 0;
   }
 
   .main-menu.shown ul {
     /* Vis menu-listen, når klassen ".shown" er til stede */
-
+    border-top: 1px solid #3c4e3a;
     padding-top: 1rem;
     display: flex;
     flex: 1 1 100%;
@@ -63,11 +65,6 @@
   color: rgb(255, 255, 255);
 }
 
-.button {
-  background-color: #7ca577;
-  padding: 0.5rem;
-}
-
 .portfolio_tema3,
 .portfolio_tema5,
 .section_2,
@@ -78,7 +75,8 @@
 .portfolio_tema2,
 .portfolio_tema3,
 .portfolio_tema4,
-.portfolio_tema5 {
+.portfolio_tema5,
+.portfolio_tema6 {
   padding: 35px;
 }
 /* Splashbillede */
@@ -110,11 +108,20 @@
 }
 
 .forside_button {
+  text-align: center;
+}
+
+/* .forside_button {
   display: grid;
   justify-content: center;
   background-color: #7ca577;
   padding: 0.5rem;
   margin-top: 2rem;
+} */
+
+.section_html2 figure,
+.section_html1 figure {
+  padding-block: 1rem;
 }
 
 .container {
@@ -180,6 +187,12 @@
     font-size: 2rem;
   }
 
+  .forside_button {
+    display: grid;
+    grid-column: 1;
+    grid-row: 3;
+  }
+
   /* Side: Projekter */
   .container_portfolio {
     display: grid;
@@ -189,11 +202,12 @@
   .portfolio_tema2,
   .portfolio_tema3,
   .portfolio_tema4,
-  .portfolio_tema5 {
+  .portfolio_tema5,
+  .portfolio_tema6 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    padding-block: 3.5rem;
+    padding-block: 2.5rem;
     gap: 30px;
   }
 
@@ -241,5 +255,17 @@
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 3rem;
+  }
+
+  /* .tema_grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    gap: 3rem;
+  } */
+
+  .section_html2 figure {
+    padding-block: 0rem;
   }
 }

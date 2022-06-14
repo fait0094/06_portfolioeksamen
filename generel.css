@@ -56,11 +56,7 @@ p,
 }
 
 .p_pf {
-  margin-bottom: 20px;
-}
-
-.button {
-  font-size: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 a {
@@ -69,6 +65,7 @@ a {
   font-family: "Oswald", sans-serif;
   font-size: 1.1rem;
   color: rgb(255, 255, 255);
+  cursor: pointer;
 }
 
 a:hover {
@@ -81,8 +78,28 @@ figcaption {
   text-align: center;
 }
 
-.forside_button:hover,
-.button:hover {
+.button,
+.forside_button {
+  font-size: 1rem;
+  letter-spacing: 0.03rem;
+  font-family: "Oswald", sans-serif;
+  background-color: #7ca577;
+  padding: 0.5rem;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+.button:hover,
+.forside_button:hover {
   background-color: #5b7e57;
   color: white;
 }
+
+.forside_button {
+  margin-top: 2.3rem;
+}
+
+/* .button {
+  margin-top: 2rem;
+} */
