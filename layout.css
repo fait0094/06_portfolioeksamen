@@ -1,8 +1,9 @@
+/* ------- Menu ------- */
 .menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #476444;
+  background: var(--dark-green);
   padding: 1.5rem;
 
   /* Tilføjet flex-wrap, så "Luk" forbliver på "Menu" plads */
@@ -16,7 +17,7 @@
   margin-right: 5rem;
 }
 
-/* Burgermenu */
+/* ------- Burgermenu-knap ------- */
 .toggle-btn {
   font-family: "Oswald", sans-serif;
   background: transparent;
@@ -38,6 +39,8 @@
   .main-menu {
     /* Fjern ".main-menu"-boksen fra ligningen, når viewporten maksimalt er 600px, men behold børnene, så disse deltager i flex-kontekten */
     display: contents;
+
+    /* Rykker menu-punkterne til højre */
     text-align: right;
   }
 
@@ -57,32 +60,7 @@
   }
 }
 
-.overskrift {
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 1.5rem;
-  background: #5b8057;
-  text-align: center;
-  color: rgb(255, 255, 255);
-}
-
-.portfolio_tema3,
-.portfolio_tema5,
-.section_2,
-.section_gray,
-.portfolio_om_mig {
-  background-color: #f4f4f4;
-}
-
-.portfolio_tema2,
-.portfolio_tema3,
-.portfolio_tema4,
-.portfolio_tema5,
-.portfolio_tema6,
-.portfolio_om_mig {
-  padding: 35px;
-}
-
-/* Splashbillede */
+/* ------- Forside/splash-billede (mobil) ------- */
 .splash {
   background-image: url(img/portfolio_splash.webp);
   width: 100%;
@@ -98,24 +76,41 @@
   text-align: center;
 }
 
-.forside_tekst1 {
+.col_tekst h1 {
   font-size: 4rem;
   color: white;
 }
-
-.forside_tekst2 {
+.col_tekst h2 {
   font-size: 2rem;
   color: white;
   font-weight: 300;
 }
 
+.col_tekst .button {
+  margin-top: 2.3rem;
+}
+
+/* ------- Overskrift-banner ------- */
+.overskrift {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--light-green);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 1.5rem;
+}
+
+/* ------- Mobil - andet ------- */
+.portfolio_tema3,
+.portfolio_tema5,
+.portfolio_om_mig,
+.section_gray,
+.section_2 {
+  background-color: #f4f4f4;
+}
+
 .section_gray figure,
 .section_white figure {
   padding-block: 1rem;
-}
-
-.container {
-  max-width: 1000px;
 }
 
 .section_1,
@@ -127,12 +122,20 @@
   padding: 2rem;
 }
 
+.container_portfolio section {
+  padding: 2.5rem;
+}
+
 .portraet_2 {
   margin-top: 1rem;
 }
 
+.p_pf {
+  margin-bottom: 1.5rem;
+}
+
 @media (min-width: 600px) {
-  /* Forside */
+  /* ------- Forside/splash-billede ------- */
   .splash {
     background-size: 331%;
     background-position: 64% 0%;
@@ -149,64 +152,44 @@
     padding-top: 0;
   }
 
-  .forside_tekst1 {
+  .col_tekst h1 {
     font-size: 5.5rem;
   }
 
-  .forside_tekst2 {
+  .col_tekst h2 {
     font-size: 2rem;
   }
 
-  /* Side: Projekter */
+  /* ------- Side: Portfolio ------- */
   .container_portfolio {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 
-  .portfolio_tema2,
-  .portfolio_tema3,
-  .portfolio_tema4,
-  .portfolio_tema5,
-  .portfolio_tema6,
-  .portfolio_om_mig {
+  .container_portfolio section {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
     padding-block: 2rem;
     gap: 30px;
+    align-items: center;
   }
 
   .portfolio_tema3,
-  .portfolio_tema4 {
+  .portfolio_tema4,
+  .portfolio_om_mig {
     background-color: #f4f4f4;
   }
 
-  /* Er der behov for det, når default baggrunden er hvid? */
   .portfolio_tema2,
   .portfolio_tema5 {
     background-color: white;
   }
 
-  .tekst_tema2,
-  .tekst_tema3,
-  .tekst_tema4,
-  .tekst_tema5 {
+  .tekst_pf {
     order: -1;
   }
 
-  /* Side: Om mig */
-  /* .grid_1, */
-  .grid_2 {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 3rem;
-  }
-
-  /* .grid_1 {
-    padding-block: 5rem;
-    align-items: center;
-  } */
-
+  /* ------- Side: Om mig ------- */
   .grid_1 {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -215,36 +198,27 @@
     gap: 3rem;
   }
 
-  .section_2 .container {
-    padding-block: 5rem;
+  .grid_2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding-bottom: 1rem;
+    gap: 3rem;
   }
 
-  .grid_2 {
-    padding-bottom: 1rem;
+  .section_2 .container {
+    padding-block: 5rem;
   }
 
   .portraet_2 {
     order: -1;
   }
 
-  /* Side: Tema 2 */
+  /* ------- Generel grid på tema-sider ------- */
   .tema_grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 3rem;
-  }
-
-  /* .tema_grid2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    align-items: center;
-    gap: 3rem;
-  } */
-
-  .section_gray figure {
-    padding-block: 0rem;
   }
 }
 
@@ -270,11 +244,11 @@
     padding-left: 15rem;
   }
 
-  .forside_tekst1 {
+  .col_tekst h1 {
     font-size: 5.5rem;
   }
 
-  .forside_tekst2 {
+  .col_tekst h2 {
     font-size: 2rem;
   }
 }
