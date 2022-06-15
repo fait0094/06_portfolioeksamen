@@ -160,35 +160,6 @@
     font-size: 2rem;
   }
 
-  /* ------- Side: Portfolio ------- */
-  .container_portfolio {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .container_portfolio section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-block: 2rem;
-    gap: 30px;
-    align-items: center;
-  }
-
-  .portfolio_tema3,
-  .portfolio_tema4,
-  .portfolio_om_mig {
-    background-color: #f4f4f4;
-  }
-
-  .portfolio_tema2,
-  .portfolio_tema5 {
-    background-color: white;
-  }
-
-  .tekst_pf {
-    order: -1;
-  }
-
   /* ------- Side: Om mig ------- */
   .grid_1 {
     display: grid;
@@ -219,6 +190,41 @@
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 3rem;
+  }
+
+  .tekst_order {
+    order: -1;
+  }
+}
+
+@media (min-width: 800px) {
+  /* ------- Side: Portfolio ------- */
+  .container_portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .container_portfolio section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-block: 2rem;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .portfolio_tema3,
+  .portfolio_tema4,
+  .portfolio_om_mig {
+    background-color: #f4f4f4;
+  }
+
+  .portfolio_tema2,
+  .portfolio_tema5 {
+    background-color: white;
+  }
+
+  .tekst_pf {
+    order: -1;
   }
 }
 
